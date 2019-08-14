@@ -1,0 +1,22 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "An app for chatting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapperBA/chat-app.git"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Casper B. Arnesen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapperBA/chat-app/issues"
+  },
+  "homepage": "https://github.com/CapperBA/chat-app#readme"
+}
