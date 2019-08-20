@@ -1,14 +1,16 @@
 {
-  "name": "chatapp",
+  "name": "templateapp",
   "version": "1.0.0",
-  "description": "An app for chatting",
+  "description": "Template API app w/ tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/**/*Tests.js",
+    "lint": "eslint .",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CapperBA/chat-app.git"
+    "url": "git+https://github.com/CapperBA/template-app.git"
   },
   "keywords": [
     "chat"
@@ -16,7 +18,30 @@
   "author": "Casper B. Arnesen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CapperBA/chat-app/issues"
+    "url": "https://github.com/CapperBA/template-app/issues"
   },
-  "homepage": "https://github.com/CapperBA/chat-app#readme"
+  "homepage": "https://github.com/CapperBA/template-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "should": "^13.2.3",
+    "sinon": "^7.4.1",
+    "supertest": "^4.0.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2000",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
 }
